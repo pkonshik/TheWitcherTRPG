@@ -5,6 +5,7 @@
         <td></td>
         <td><b>{{localize "WITCHER.table.Name"}}</b></td>
         <td><b>{{localize "WITCHER.Weapon.Short.Damage"}}</b></td>
+        <td><b>{{localize "WITCHER.table.Quantity"}}</b></td>
         <td><b>{{localize "WITCHER.Weapon.Short.Reliability"}}</b></td>
         <td><b>{{localize "WITCHER.Item.ROF"}}</b></td>
     </tr>
@@ -20,6 +21,8 @@
             <td><a class="item-roll">{{weapon.name}}</a></td>
             <td><input class="inline-edit" data-field="system.damage" type="text" value="{{weapon.system.damage}}"
                        placeholder=""/></td>
+            <td><input class="inline-edit small" data-field="system.quantity" type="text"
+                       value="{{system.quantity}}" placeholder=""/></td>
             <td><input class="inline-edit small" data-field="system.reliable" type="text"
                        value="{{weapon.system.reliable}}" placeholder=""/></td>
             <td><input class="inline-edit small" data-field="system.rateOfFire" type="text"
