@@ -658,6 +658,7 @@
   "WITCHER.Dialog.attackLLeg": "L. Leg",
   "WITCHER.Dialog.attackLimb": "Limb",
   "WITCHER.Dialog.attackTail": "Tail/Wing",
+  "WITCHER.Dialog.entireBody": "Entire Body",
   "WITCHER.Dialog.attackOutsideLOS": "Outside the enemy LOS",
   "WITCHER.Dialog.attackIsFastDraw": "Fast Draw",
   "WITCHER.Dialog.attackIsProne": "You are prone",
