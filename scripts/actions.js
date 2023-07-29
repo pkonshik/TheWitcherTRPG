@@ -156,32 +156,32 @@ async function ApplyDamage(actor, dmgType, location, totalDamage) {
       case "Entire Body":
         armorSet1 = getArmors(headArmors)
         values = getArmorSp(armorSet1["lightArmor"]?.system.headStopping, armorSet1["mediumArmor"]?.system.headStopping, armorSet1["heavyArmor"]?.system.headStopping)
-        displaySP +=  values[0] + "(Голова)";
+        displaySP +=  values[0] + `[${game.i18n.localize("WITCHER.Dialog.attackHead")}]`;
         totalSP += values[1] - totalDamage < 0 ? values[1] - totalDamage : 0;
         
         armorSet2 = getArmors(torsoArmors)
         values = getArmorSp(armorSet2["lightArmor"]?.system.torsoStopping, armorSet2["mediumArmor"]?.system.torsoStopping, armorSet2["heavyArmor"]?.system.torsoStopping)
-        displaySP +=  "+" + values[0] + "(Торс)";
+        displaySP +=  "+" + values[0] + `[${game.i18n.localize("WITCHER.Dialog.attackTorso")}]`;
         totalSP += values[1] - totalDamage < 0 ? values[1] - totalDamage : 0;
 
         armorSet2 = getArmors(torsoArmors)
         values = getArmorSp(armorSet2["lightArmor"]?.system.rightArmStopping, armorSet2["mediumArmor"]?.system.rightArmStopping, armorSet2["heavyArmor"]?.system.rightArmStopping)
-        displaySP +=  "+" + values[0] + "(П. Рука)";
+        displaySP +=  "+" + values[0] + `[${game.i18n.localize("WITCHER.Dialog.attackRArm")}]`;
         totalSP += values[1] - totalDamage < 0 ? values[1] - totalDamage : 0;
 
         armorSet2 = getArmors(torsoArmors)
         values = getArmorSp(armorSet2["lightArmor"]?.system.leftArmStopping, armorSet2["mediumArmor"]?.system.leftArmStopping, armorSet2["heavyArmor"]?.system.leftArmStopping)
-        displaySP +=  "+" + values[0] + "(Л. Рука)";
+        displaySP +=  "+" + values[0] + `[${game.i18n.localize("WITCHER.Dialog.attackLArm")}]`;
         totalSP += values[1] - totalDamage < 0 ? values[1] - totalDamage : 0;
 
         armorSet = getArmors(legArmors)
         values = getArmorSp(armorSet["lightArmor"]?.system.rightLegStopping, armorSet["mediumArmor"]?.system.rightLegStopping, armorSet["heavyArmor"]?.system.rightLegStopping)
-        displaySP +=  "+" + values[0] + "(П. Нога)";
+        displaySP +=  "+" + values[0] + `[${game.i18n.localize("WITCHER.Dialog.attackRLeg")}]`;
         totalSP += values[1] - totalDamage < 0 ? values[1] - totalDamage : 0;
 
         armorSet = getArmors(legArmors)
         values = getArmorSp(armorSet["lightArmor"]?.system.leftLegStopping, armorSet["mediumArmor"]?.system.leftLegStopping, armorSet["heavyArmor"]?.system.leftLegStopping)
-        displaySP +=  "+" + values[0] + "(Л. Нога)";
+        displaySP +=  "+" + values[0] + `[${game.i18n.localize("WITCHER.Dialog.attackLLeg")}]`;
         totalSP += values[1] - totalDamage < 0 ? values[1] - totalDamage : 0;
 
         console.log(totalSP);
