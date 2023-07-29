@@ -658,6 +658,7 @@
   "WITCHER.Dialog.attackLLeg": "Левая нога",
   "WITCHER.Dialog.attackLimb": "Конечность",
   "WITCHER.Dialog.attackTail": "Хвост/Крыло",
+  "WITCHER.Dialog.entireBody": "Всё тело",
   "WITCHER.Dialog.attackOutsideLOS": "Вне поля зрения врага",
   "WITCHER.Dialog.attackIsFastDraw": "Быстрое выхватывание",
   "WITCHER.Dialog.attackIsProne": "Вы лежите ничком",
