@@ -157,5 +157,23 @@
             {{> "systems/TheWitcherTRPG/templates/partials/loot-item-display.html" item=item isGM=../isGM}}
             {{/each}}
         </table>
+        <h2>{{localize "WITCHER.Inventory.AlchemicalItems"}}</h2>
+        <table class="item-table item-list">
+            {{#each alchemicalItems as |item id|}}
+            {{> "systems/TheWitcherTRPG/templates/partials/loot-item-display.html" item=item isGM=../isGM}}
+            {{/each}}
+        </table>
+        <h2>{{localize "WITCHER.Inventory.Oils"}}</h2>
+        <table class="item-table item-list">
+            {{#each oils as |item id|}}
+            {{> "systems/TheWitcherTRPG/templates/partials/loot-item-display.html" item=item isGM=../isGM}}
+            {{/each}}
+        </table>
+        <h2>{{localize "WITCHER.Inventory.WitcherPotionsAndDecoctions"}}</h2>
+        <table class="item-table item-list">
+        {{#each witcherPotions as |item id|}}
+        {{> "systems/TheWitcherTRPG/templates/partials/loot-item-display.html" item=item isGM=../isGM}}
+        {{/each}}
+    </table>
     </div>
 </div>
