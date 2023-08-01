@@ -207,6 +207,7 @@ export default class WitcherActorSheet extends ActorSheet {
                                    i.type == "armor" ||
                                    i.type == "alchemical" ||
                                    i.type == "enhancement" ||
+                                   i.type == "mount" ||
                                    i.type == "mutagen");
     data.notes = actor.getList("note");
 
