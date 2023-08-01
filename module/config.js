@@ -52,6 +52,7 @@ witcher.MonsterTypes = {
     Ogroid: "WITCHER.Monster.Type.Ogroid",
     Draconid: "WITCHER.Monster.Type.Draconid",
     Vampire: "WITCHER.Monster.Type.Vampire",
+    Exceptional: "WITCHER.Monster.Type.Exceptional",
 }
 
 witcher.CritGravity = {
