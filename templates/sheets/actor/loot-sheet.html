@@ -175,5 +175,11 @@
         {{> "systems/TheWitcherTRPG/templates/partials/loot-item-display.html" item=item isGM=../isGM}}
         {{/each}}
     </table>
+        <h2>{{localize "WITCHER.Inventory.Mounts"}}</h2>
+        <table class="item-table item-list">
+            {{#each mounts as |item id|}}
+            {{> "systems/TheWitcherTRPG/templates/partials/loot-item-display.html" item=item isGM=../isGM}}
+            {{/each}}
+        </table>
     </div>
 </div>
